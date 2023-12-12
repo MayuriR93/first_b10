@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Welcome</title>
+
+<style>                                     
+    body {background-color: powderblue;} 
+    h1   {color: blue;}
+    p    {color: red;}
+</style>                                        <!-- ithe style tag ha internal css aahe-->
+
+</head>
+<body style="background-color: powderblue;">
+
+<h1>First Heading</h1>
+<h6 style="color:aqua;">first paragraph.</h6>      <!-- ithe style="color:aqua; he inline css aahe-->
+<a href="https://www.w3schools.com">W3 Schools</a>
+<p> paragraph second </p>
+<p> paragraph third </p>
+<p> paragraph fourth </p>
+</body>
+</html>
+
+<!--{{name}} >   <! ithe aapan backend madhun data fetch karun web page vr show kela aahe. single name(value) sathi-->
+
+{% for i in name %}   
+{{i}} <br>
+{% endfor %}        <!-- ithe aapan html sobat python cha code club karat aahe tyala DTL-mhantat Django Templeting Language -->
+
+<table>
+    <tr>
+      <th>Company</th>
+      <th>Contact</th> 
+      <th>Country</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>
+
+{% for i in all_emps %}
+{{i}}
+{% endfor %}
